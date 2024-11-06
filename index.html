@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsive task 4</title>
+    <style>
+        *{
+            max-width: 1140px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        body{
+            display:grid;  
+            grid-template-row: repeat(2,1fr) ;
+            margin-top:90px;
+           
+        }
+        .image-container{
+  
+            display:flex; 
+            text-align: left;
+            align-items: center;
+            border: 2px solid rgba(155, 151, 152, 0.382); 
+            
+        }
+        .image-container img{
+            width:400px;
+            height:250px;
+            padding-top: 20px;
+        }
+        .title{
+            display:50%;
+           width:500px;
+            height:90%;
+            margin-top: 15px;
+            text-align:left;
+            
+            padding: 8px;
+        }
+        .image-container h2{
+            font-family:sans-serif;
+        }
+        .image-container p{
+            color: rgb(58, 58, 49);
+        }
+        .image-container button{
+            margin-top: 30px;
+            padding-top: 5px;
+            text-align: center;
+            background-color: rgb(11, 65, 192);
+            color:white;
+        }
+        @media screen and (max-width:576px){
+            
+                .image-container{
+                    flex-direction:column;
+                    align-items: flex-start;
+            } 
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+            .title {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="image-container">
+    <img src="image/food.jpg" alt="">
+    <div class="title">
+    <h2>Post Title Will be Here</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi doloribus voluptatem temporibus sunt sapiente debitis officiis tempore error laboriosam.</p>
+    <button>Read More</button>
+   </div>
+</div>
+   <div class="image-container">
+    <img src="image/food2.jpg" alt="">
+    <div class="title">
+    <h2>Post Title Will be Here</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum doloremque quidem quaerat eum est ipsa cumque doloribus reprehenderit, sunt beatae.</p>
+    <button>Read More</button>
+   </div>
+</div>
+
+</body>
+</html>
